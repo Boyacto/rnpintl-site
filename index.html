@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>알앤피인터내셔날 주식회사 | R&P International Co., Ltd.</title>
+  <meta name="description" content="알앤피인터내셔날 주식회사 (R&P International Co., Ltd.) — 공식 웹사이트. 경기도 남양주시 소재." />
+  <style>
+    :root {
+      --navy: #10243e;
+      --navy-light: #1b3a5c;
+      --accent: #2f6fb4;
+      --text: #22303f;
+      --muted: #5d6b7a;
+      --bg: #f7f9fb;
+      --card: #ffffff;
+      --line: #e3e9ef;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--line);
+      position: sticky; top: 0; z-index: 10;
+    }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      font-weight: 800; font-size: 1.05rem; letter-spacing: -0.01em;
+      color: var(--navy); text-decoration: none;
+    }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a {
+      color: var(--muted); text-decoration: none; font-size: 0.92rem; font-weight: 500;
+    }
+    .nav-links a:hover { color: var(--navy); }
+
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      color: #fff;
+      padding: 96px 0 88px;
+    }
+    .hero h1 {
+      font-size: clamp(1.7rem, 4vw, 2.6rem);
+      font-weight: 800; letter-spacing: -0.02em; line-height: 1.35;
+      margin-bottom: 18px;
+    }
+    .hero p.sub {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: rgba(255,255,255,0.82);
+      max-width: 560px;
+    }
+    .hero .en {
+      margin-top: 10px; font-size: 0.95rem; color: rgba(255,255,255,0.6);
+      letter-spacing: 0.02em;
+    }
+
+    section { padding: 72px 0; }
+    section h2 {
+      font-size: 1.5rem; font-weight: 800; color: var(--navy);
+      letter-spacing: -0.01em; margin-bottom: 8px;
+    }
+    section .h2-en {
+      font-size: 0.85rem; color: var(--accent); font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 28px;
+    }
+
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+    }
+    @media (max-width: 720px) { .about-grid { grid-template-columns: 1fr; } }
+    .card {
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: 12px; padding: 28px;
+    }
+    .card h3 {
+      font-size: 1.02rem; font-weight: 700; color: var(--navy); margin-bottom: 10px;
+    }
+    .card p { font-size: 0.95rem; color: var(--muted); }
+
+    table.info {
+      width: 100%; border-collapse: collapse; background: var(--card);
+      border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
+    }
+    table.info th, table.info td {
+      text-align: left; padding: 16px 20px; font-size: 0.95rem;
+      border-bottom: 1px solid var(--line); vertical-align: top;
+    }
+    table.info tr:last-child th, table.info tr:last-child td { border-bottom: none; }
+    table.info th {
+      width: 180px; color: var(--navy); font-weight: 700; background: #fbfcfd;
+      white-space: nowrap;
+    }
+    table.info td { color: var(--text); }
+    table.info td .en { display: block; color: var(--muted); font-size: 0.87rem; margin-top: 2px; }
+
+    .contact-box {
+      background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+      padding: 32px; display: flex; flex-direction: column; gap: 14px;
+    }
+    .contact-row { display: flex; gap: 14px; align-items: baseline; }
+    .contact-row .label {
+      min-width: 80px; font-weight: 700; color: var(--navy); font-size: 0.92rem;
+    }
+    .contact-row .value { color: var(--text); font-size: 0.95rem; }
+    .contact-row .value a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .contact-row .value a:hover { text-decoration: underline; }
+
+    footer {
+      background: var(--navy); color: rgba(255,255,255,0.65);
+      padding: 36px 0; font-size: 0.85rem;
+    }
+    footer .foot-name { color: #fff; font-weight: 700; margin-bottom: 6px; }
+    footer .wrap { display: flex; flex-direction: column; gap: 2px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">R&amp;P <span>International</span></a>
+    <nav class="nav-links">
+      <a href="#about">회사소개</a>
+      <a href="#info">기업정보</a>
+      <a href="#contact">문의</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>알앤피인터내셔날 주식회사</h1>
+    <p class="sub">알앤피인터내셔날은 대한민국 경기도 남양주에 본사를 둔 기업으로, 신뢰를 바탕으로 한 비즈니스를 만들어갑니다.</p>
+    <p class="en">R&amp;P International Co., Ltd. — Namyangju-si, Gyeonggi-do, Republic of Korea</p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>회사소개</h2>
+    <div class="h2-en">About Us</div>
+    <div class="about-grid">
+      <div class="card">
+        <h3>신뢰 기반의 경영</h3>
+        <p>알앤피인터내셔날 주식회사는 고객과의 신뢰를 최우선 가치로 삼아, 책임 있는 비즈니스를 지향합니다.</p>
+      </div>
+      <div class="card">
+        <h3>새로운 도전</h3>
+        <p>변화하는 시장 환경 속에서 새로운 기회를 탐색하며, 디지털 서비스 영역으로 사업을 확장해 나가고 있습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="info">
+  <div class="wrap">
+    <h2>기업정보</h2>
+    <div class="h2-en">Company Information</div>
+    <table class="info">
+      <tr>
+        <th>상호</th>
+        <td>알앤피인터내셔날 주식회사<span class="en">R&amp;P International Co., Ltd.</span></td>
+      </tr>
+      <tr>
+        <th>대표이사</th>
+        <td>이훈표<span class="en">Hoonpyo Lee</span></td>
+      </tr>
+      <tr>
+        <th>소재지</th>
+        <td>경기도 남양주시 화도읍 수레로 1178, 103동 1303호 (우 12195)<span class="en">103-1303, 1178, Sure-ro, Hwado-eup, Namyangju-si, Gyeonggi-do, Republic of Korea 12195</span></td>
+      </tr>
+      <tr>
+        <th>이메일</th>
+        <td>admin@rnpintl.com</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>문의</h2>
+    <div class="h2-en">Contact</div>
+    <div class="contact-box">
+      <div class="contact-row">
+        <div class="label">이메일</div>
+        <div class="value"><a href="mailto:admin@rnpintl.com">admin@rnpintl.com</a></div>
+      </div>
+      <div class="contact-row">
+        <div class="label">주소</div>
+        <div class="value">경기도 남양주시 화도읍 수레로 1178, 103동 1303호 (우 12195)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-name">알앤피인터내셔날 주식회사 · R&amp;P International Co., Ltd.</div>
+    <div>103-1303, 1178, Sure-ro, Hwado-eup, Namyangju-si, Gyeonggi-do, Republic of Korea 12195</div>
+    <div>© 2026 R&amp;P International Co., Ltd. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
