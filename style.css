@@ -142,21 +142,29 @@ footer nav a:hover { color: #dd8b76; }
 /* ── 공급망 체인: 타이포그래피 프로세스 ── */
 section.band { background: var(--bone-dim); }
 ol.chain {
-  list-style: none; display: flex; flex-wrap: wrap; align-items: baseline;
-  row-gap: 14px; margin-top: 44px; max-width: 880px;
+  list-style: none; display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 44px 28px; margin-top: 48px;
 }
-ol.chain li {
-  font-family: var(--font-display); font-weight: 430;
-  font-size: clamp(1.35rem, 2.8vw, 2rem); letter-spacing: -0.015em; color: var(--ink);
-  line-height: 1.25;
+ol.chain li { border-top: 1px solid rgba(27,34,49,0.35); padding-top: 14px; }
+ol.chain .idx {
+  display: block; font-family: var(--font-display); font-style: italic;
+  font-size: 1.35rem; font-weight: 420; color: var(--rust); margin-bottom: 8px;
+  font-variant-numeric: tabular-nums;
 }
-ol.chain li + li::before {
-  content: "\2192"; color: var(--rust); font-family: var(--font-body);
-  font-weight: 300; font-size: 0.62em; margin: 0 20px; vertical-align: 0.12em;
+ol.chain .ko {
+  display: block; font-size: 1.15rem; font-weight: 600;
+  letter-spacing: -0.01em; color: var(--ink); line-height: 1.35;
 }
-ol.chain.small { margin: 36px 0 6px; }
-ol.chain.small li { font-size: clamp(1.05rem, 2vw, 1.3rem); color: rgba(27,34,49,0.75); }
-ol.chain.small li + li::before { margin: 0 14px; }
+ol.chain .stage-en {
+  display: block; margin-top: 5px; font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.12em; color: rgba(27,34,49,0.45);
+}
+ol.chain.small { margin: 36px 0 6px; gap: 32px 24px; max-width: 760px; }
+ol.chain.small .idx { font-size: 1.1rem; margin-bottom: 5px; }
+ol.chain.small .ko { font-size: 1rem; }
+@media (max-width: 720px) {
+  ol.chain, ol.chain.small { grid-template-columns: repeat(2, 1fr); gap: 30px 20px; }
+}
 
 
 /* ── 사업영역: 에디토리얼 넘버드 로우 ── */
