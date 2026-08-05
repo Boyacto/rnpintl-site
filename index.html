@@ -3,183 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>알앤피인터내셔날 주식회사 | R&P International Co., Ltd.</title>
-  <meta name="description" content="알앤피인터내셔날 주식회사 (RNP INTERNATIONAL CO.,LTD) — 공식 웹사이트. 경기도 하남시 소재." />
-  <style>
-    :root {
-      --navy: #10243e;
-      --navy-light: #1b3a5c;
-      --accent: #2f6fb4;
-      --text: #22303f;
-      --muted: #5d6b7a;
-      --bg: #f7f9fb;
-      --card: #ffffff;
-      --line: #e3e9ef;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-    .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
-
-    header {
-      background: var(--card);
-      border-bottom: 1px solid var(--line);
-      position: sticky; top: 0; z-index: 10;
-    }
-    .nav {
-      display: flex; align-items: center; justify-content: space-between;
-      height: 64px;
-    }
-    .logo {
-      font-weight: 800; font-size: 1.05rem; letter-spacing: -0.01em;
-      color: var(--navy); text-decoration: none;
-    }
-    .logo span { color: var(--accent); }
-    .nav-links { display: flex; gap: 28px; }
-    .nav-links a {
-      color: var(--muted); text-decoration: none; font-size: 0.92rem; font-weight: 500;
-    }
-    .nav-links a:hover { color: var(--navy); }
-
-    .hero {
-      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
-      color: #fff;
-      padding: 96px 0 88px;
-    }
-    .hero h1 {
-      font-size: clamp(1.7rem, 4vw, 2.6rem);
-      font-weight: 800; letter-spacing: -0.02em; line-height: 1.35;
-      margin-bottom: 18px;
-    }
-    .hero p.sub {
-      font-size: clamp(1rem, 2vw, 1.15rem);
-      color: rgba(255,255,255,0.82);
-      max-width: 560px;
-    }
-    .hero .en {
-      margin-top: 10px; font-size: 0.95rem; color: rgba(255,255,255,0.6);
-      letter-spacing: 0.02em;
-    }
-
-    section { padding: 72px 0; }
-    section h2 {
-      font-size: 1.5rem; font-weight: 800; color: var(--navy);
-      letter-spacing: -0.01em; margin-bottom: 8px;
-    }
-    section .h2-en {
-      font-size: 0.85rem; color: var(--accent); font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 28px;
-    }
-
-    .about-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
-    }
-    @media (max-width: 720px) { .about-grid { grid-template-columns: 1fr; } }
-    .card {
-      background: var(--card); border: 1px solid var(--line);
-      border-radius: 12px; padding: 28px;
-    }
-    .card h3 {
-      font-size: 1.02rem; font-weight: 700; color: var(--navy); margin-bottom: 10px;
-    }
-    .card p { font-size: 0.95rem; color: var(--muted); }
-
-    table.info {
-      width: 100%; border-collapse: collapse; background: var(--card);
-      border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
-    }
-    table.info th, table.info td {
-      text-align: left; padding: 16px 20px; font-size: 0.95rem;
-      border-bottom: 1px solid var(--line); vertical-align: top;
-    }
-    table.info tr:last-child th, table.info tr:last-child td { border-bottom: none; }
-    table.info th {
-      width: 180px; color: var(--navy); font-weight: 700; background: #fbfcfd;
-      white-space: nowrap;
-    }
-    table.info td { color: var(--text); }
-    table.info td .en { display: block; color: var(--muted); font-size: 0.87rem; margin-top: 2px; }
-
-    .contact-box {
-      background: var(--card); border: 1px solid var(--line); border-radius: 12px;
-      padding: 32px; display: flex; flex-direction: column; gap: 14px;
-    }
-    .contact-row { display: flex; gap: 14px; align-items: baseline; }
-    .contact-row .label {
-      min-width: 80px; font-weight: 700; color: var(--navy); font-size: 0.92rem;
-    }
-    .contact-row .value { color: var(--text); font-size: 0.95rem; }
-    .contact-row .value a { color: var(--accent); text-decoration: none; font-weight: 600; }
-    .contact-row .value a:hover { text-decoration: underline; }
-
-    footer {
-      background: var(--navy); color: rgba(255,255,255,0.65);
-      padding: 36px 0; font-size: 0.85rem;
-    }
-    footer .foot-name { color: #fff; font-weight: 700; margin-bottom: 6px; }
-    footer .wrap { display: flex; flex-direction: column; gap: 2px; }
-  </style>
+  <title>알앤피인터내셔날 주식회사 | RNP INTERNATIONAL CO.,LTD</title>
+  <meta name="description" content="알앤피인터내셔날 주식회사 — 섬유·의류 중개, 수출대행·수출주선 전문 기업. 경기도 하남시 소재." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="#">R&amp;P <span>International</span></a>
+    <a class="logo" href="index.html">R&amp;P <span>International</span></a>
     <nav class="nav-links">
-      <a href="#about">회사소개</a>
-      <a href="#info">기업정보</a>
-      <a href="#contact">문의</a>
+      <a href="index.html" class="active">홈</a>
+      <a href="business.html">사업영역</a>
+      <a href="company.html">회사소개</a>
+      <a href="index.html#contact">문의</a>
     </nav>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap">
-    <h1>알앤피인터내셔날 주식회사</h1>
-    <p class="sub">알앤피인터내셔날은 대한민국 경기도 하남에 본사를 둔 기업으로, 신뢰를 바탕으로 한 비즈니스를 만들어갑니다.</p>
-    <p class="en">RNP INTERNATIONAL CO.,LTD — Hanam-si, Gyeonggi-do, Republic of Korea</p>
+    <h1>국경을 넘는 거래를<br />연결합니다</h1>
+    <p class="sub">알앤피인터내셔날 주식회사는 섬유·의류 분야의 중개와 수출대행·수출주선을 전문으로 하는 무역 기업입니다. 국내 공급처와 해외 바이어 사이의 거래가 매끄럽게 성사되도록 연결하고, 수출 실무를 대행합니다.</p>
+    <p class="en">RNP INTERNATIONAL CO.,LTD — Trade agency for textiles &amp; apparel, export agency services. Hanam-si, Gyeonggi-do, Republic of Korea</p>
   </div>
 </section>
 
-<section id="about">
+<section id="business-summary">
   <div class="wrap">
-    <h2>회사소개</h2>
-    <div class="h2-en">About Us</div>
-    <div class="about-grid">
+    <h2>사업영역</h2>
+    <div class="h2-en">What We Do</div>
+    <div class="grid-3">
       <div class="card">
-        <h3>신뢰 기반의 경영</h3>
-        <p>알앤피인터내셔날 주식회사는 고객과의 신뢰를 최우선 가치로 삼아, 책임 있는 비즈니스를 지향합니다.</p>
+        <span class="num">01</span>
+        <h3>섬유·의류 중개</h3>
+        <p>국내외 섬유·의류 공급처와 구매처를 연결하는 중개 사업을 수행합니다. 원단·의류 제품의 거래처 발굴과 거래 조건 조율을 지원합니다.</p>
+        <a class="more" href="business.html">자세히 보기 →</a>
       </div>
       <div class="card">
-        <h3>새로운 도전</h3>
-        <p>변화하는 시장 환경 속에서 새로운 기회를 탐색하며, 디지털 서비스 영역으로 사업을 확장해 나가고 있습니다.</p>
+        <span class="num">02</span>
+        <h3>수출대행 · 수출주선</h3>
+        <p>수출 경험이 부족한 기업을 대신해 수출 절차 전반을 대행하고, 해외 판로 개척과 거래 성사를 주선합니다.</p>
+        <a class="more" href="business.html">자세히 보기 →</a>
+      </div>
+      <div class="card">
+        <span class="num">03</span>
+        <h3>디지털 신사업</h3>
+        <p>축적된 유통·중개 경험을 바탕으로 모바일 애플리케이션 기반의 신규 디지털 서비스를 준비하고 있습니다.</p>
+        <a class="more" href="business.html">자세히 보기 →</a>
       </div>
     </div>
   </div>
 </section>
 
-<section id="info">
+<section class="tight" id="about-summary">
   <div class="wrap">
-    <h2>기업정보</h2>
-    <div class="h2-en">Company Information</div>
+    <h2>회사 개요</h2>
+    <div class="h2-en">Company at a Glance</div>
     <table class="info">
       <tr>
         <th>상호</th>
-        <td>알앤피인터내셔날 주식회사<span class="en">R&amp;P International Co., Ltd.</span></td>
+        <td>알앤피인터내셔날 주식회사<span class="en">RNP INTERNATIONAL CO.,LTD</span></td>
       </tr>
       <tr>
         <th>대표이사</th>
         <td>이영림<span class="en">Youngrim Lee</span></td>
       </tr>
       <tr>
+        <th>설립</th>
+        <td>2024년 7월</td>
+      </tr>
+      <tr>
         <th>사업자등록번호</th>
         <td>486-88-03043</td>
+      </tr>
+      <tr>
+        <th>업종</th>
+        <td>도매 및 소매업 — 섬유·의류 중개, 수출대행·수출주선<span class="en">Wholesale and retail trade — Agents involved in the sale of textiles and clothing, export agency</span></td>
       </tr>
       <tr>
         <th>소재지</th>
@@ -197,6 +97,7 @@
   <div class="wrap">
     <h2>문의</h2>
     <div class="h2-en">Contact</div>
+    <p class="body">거래 제안, 수출 대행 상담, 기타 문의는 아래 연락처로 보내주시면 확인 후 회신드리겠습니다.</p>
     <div class="contact-box">
       <div class="contact-row">
         <div class="label">이메일</div>
@@ -206,15 +107,25 @@
         <div class="label">주소</div>
         <div class="value">경기도 하남시 미사강변한강로 135, 다동 제2층 237호 (우 12902)</div>
       </div>
+      <div class="contact-row">
+        <div class="label">업무시간</div>
+        <div class="value">평일 09:00 – 18:00 (KST)</div>
+      </div>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div class="foot-name">알앤피인터내셔날 주식회사 · R&amp;P International Co., Ltd.</div>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="business.html">사업영역</a>
+      <a href="company.html">회사소개</a>
+    </nav>
+    <div class="foot-name">알앤피인터내셔날 주식회사 · RNP INTERNATIONAL CO.,LTD</div>
+    <div>대표이사 이영림 · 사업자등록번호 486-88-03043</div>
     <div>DA-237, 135 Misagangbyeonhangang-ro, Hanam-si, Gyeonggi-do, Republic of Korea 12902</div>
-    <div>© 2026 R&amp;P International Co., Ltd. All rights reserved.</div>
+    <div>© 2026 RNP INTERNATIONAL CO.,LTD. All rights reserved.</div>
   </div>
 </footer>
 
